@@ -1,0 +1,10 @@
+<nav>
+    <ul>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" ><a [routerLink]="['/']" > Shopping menu</a></li>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" ><a [routerLink]="['/cart']" > Your Shopping Cart </a></li>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" ><a [routerLink]="['/register']" > Register </a></li>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" ><a [routerLink]="['/login']" > Log In </a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
+

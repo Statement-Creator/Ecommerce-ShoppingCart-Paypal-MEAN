@@ -1,0 +1,15 @@
+<p>
+  shopping-list works!
+</p>
+<div *ngIf="toggleSelected">
+<p (click)="selectedItemCall(i.itemName)" *ngFor="let i of data">
+   {{i.itemName}}
+</p>
+</div>
+
+<div *ngFor="let i of specificData">
+  <p #itemName name="itemName">{{i.itemName}}</p>
+  <p #itemPrice name="itemPrice">{{i.itemPrice}}</p>
+  <p #itemPicture name="itemPicture">{{i.itemPicture}}</p>
+  <input type="submit" (click)="addToCartCall(itemName.innerText,itemPrice.innerText,itemPicture.innerText)" >
+</div>
